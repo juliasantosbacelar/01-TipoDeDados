@@ -74,6 +74,56 @@ int main()
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
 
+	
+	//ex 02:
+
+	double celsius, farenheit, kelvin;
+
+	cout << "Digite a temperatura em Celsius:" << "\n";
+	cin >> celsius;
+
+	farenheit = (celsius * 1.8) + 32;
+	kelvin = celsius + 273.15;
+
+
+	cout << "A temperatura em Farenheit: " << farenheit << "\n";
+	cout << "A temperatura em Kelvin: " << kelvin << "\n";
+
+	//ex 03:
+
+	long seg;
+	cout << "Digite o valor em segundos: " << "\n";
+	cin >> seg;
+
+	double min = seg / 60;
+
+	double horas = min / 60;
+
+	double dias = horas / 24;
+
+	double segRestante = seg % 60;
+	
+	cout << "O valor digitado equivale a " << min << " minutos " << horas << " horas " << dias << " dias e " << segRestante << "Segundos" << "\n";
+
+	//ex 04:
+
+	cout << "Digite um valor inteiro da var" << "\n";
+
+	int qualquerValor;
+	cin >> qualquerValor;
+
+	int* ponteiro = &qualquerValor;
+
+
+	cout << "O valor da var: " << qualquerValor << "\n";
+	cout << "O endereco dessa var: " << &qualquerValor << "\n"; 
+
+	//Dobrando pelo ponteiro
+	*ponteiro = qualquerValor * 2; 
+
+	cout << "Dobrando o valor atraves do ponteiro " << qualquerValor << "\n";
+	
+
 
 }
 
